@@ -1,0 +1,11 @@
+r = int(input("enter the radius of circle"))
+for i in range(int(2 * r) + 1):
+    for j in range(int(2* r) + 1):
+        d = (((i - r) ** 2) + ((j - r) ** 2)) ** .5
+        if r - .4 < d < r + .4:
+            print("*", end=" ")
+        elif d < r:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
